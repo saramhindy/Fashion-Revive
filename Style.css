@@ -1,0 +1,895 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: linear-gradient(to top, #c72092, #6c14d0);
+}
+
+
+/*Start of navbar */
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section nav .logo h1 {
+    font-size: 35px;
+    color: #FE8DFF;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+section nav .logo span {
+    color: black;
+    text-decoration: underline;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover {
+    color: plum;
+}
+
+.logo img {
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.fa-eye-slash {
+    cursor: pointer;
+    width: 35px;
+}
+
+
+/*Search bar*/
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: plum;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #FE8DFF;
+}
+
+
+/* The search field */
+
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* The search field when it gets focus/clicked on */
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+/*End of navbar*/
+
+
+/*start of main page*/
+
+section .main .main_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    z-index: 10px;
+}
+
+section .main .main_content .main_text h1 {
+    font-size: 90px;
+    line-height: 70px;
+    background: linear-gradient(to right, #FE8DFF, #BF53FF);
+    font-family: "Pyxidium Quick V2";
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5%;
+}
+
+section .main .main_content .main_text p {
+    width: 90%;
+    position: relative;
+    top: 85px;
+    left: 5%;
+    font-size: 25px;
+    height: 50%;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+
+/* section .main .main_content .main_image img {
+    width: 650px;
+    position: relative;
+    left: 20px;
+    top: 75px;
+    height: 600px;
+} */
+
+.img-box {
+    width: 650px;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s;
+}
+
+.img-box:hover .back-img {
+    bottom: 40px;
+}
+
+.img-box:hover .main-img {
+    left: 54%;
+}
+
+
+/* button of shop now*/
+
+.button {
+    position: absolute;
+    left: 6%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    margin-top: 350px;
+    background: linear-gradient(to right, #FE8DFF, #BF53FF);
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button i {
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.button:hover i {
+    transform: translateX(6px);
+}
+
+
+/*End of header */
+
+
+/*products types*/
+
+.products-type {
+    text-align: center;
+}
+
+.products-type h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.products-type span {
+    margin-left: 15px;
+    color: black;
+}
+
+.main-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.inner-product {
+    flex: 1 1 300px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inner-product img {
+    width: 100%;
+}
+
+.inner-product a {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 1rem 3rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    z-index: 1000000;
+    text-decoration: none;
+    transition-delay: 2s;
+}
+
+.inner-product:hover {
+    cursor: pointer;
+}
+
+
+/*Scroll Brands*/
+
+.scroll-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 10px 0;
+}
+
+.scroll-container h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.scroll-container span {
+    margin-left: 15px;
+    color: black;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.item img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+
+/*Services*/
+
+.services {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 10px 0;
+    position: fixed;
+}
+
+.services h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.services h1 span {
+    margin-left: 15px;
+    color: black;
+}
+
+.services .services_cards {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+}
+
+.services .services_box i {
+    font-size: 60px;
+    color: orange;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.services .services_box h3 {
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.services .services_box p {
+    text-align: center;
+    color: #919191;
+    margin-bottom: 60px;
+}
+
+
+/*review*/
+
+.review {
+    padding-bottom: 80px;
+}
+
+.review h1 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.review h1 span {
+    color: black;
+    margin-left: 15px;
+}
+
+.review .review_box {
+    width: 95%;
+    position: relative;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.review .profile .profile_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .profile .profile_image:hover {
+    transform: scale(1.2);
+}
+
+.review .profile_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.review .profile {
+    display: flex;
+    align-items: center;
+}
+
+.review .review_box .review_card {
+    width: 500px;
+    background: #f3f1f1;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.review .review_box .review_card .card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review .review_box .review_card .card_top .profile .name {
+    margin-left: 20px;
+    line-height: 22px;
+}
+
+.review .review_box .review_card .card_top .profile .name strong {
+    font-size: 20px;
+}
+
+.review .review_box .review_card .card_top .profile .name .like i {
+    color: orange;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.review .review_box .review_card .comment p {
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+
+/* end */
+
+
+/*Login Form*/
+
+.login_form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(image/loging_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login_form .left img {
+    width: 650px;
+}
+
+.login_form .right {
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.login_form .right h1 {
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.login_form .right p {
+    margin-bottom: 5px;
+}
+
+.login_form .right .user {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .user i {
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+
+.login_form .right .user .username {
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.login_form .right .passworg_tag {
+    margin: 15px 0 5px 0;
+}
+
+.login_form .right .password {
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .password i {
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+
+.login_form .right .password input {
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.login_form .right .forget {
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+
+.login_form .right button {
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+}
+
+.login_form .right .loging_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.login_form .right .loging_icon a {
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.login_form .right .loging_icon img {
+    width: 20px;
+    margin: 5px 5px;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+}
+
+footer .footer_main {
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag {
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center {
+    text-align: center;
+}
+
+footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+}
+
+footer .footer_main .tag a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i {
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover {
+    color: #c72092;
+}
+
+footer .footer_main .tag .social_link {
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands {
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i {
+    color: white;
+}
+
+footer .footer_main .tag .social_link a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092, #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover::after {
+    left: 0;
+}
+
+footer .footer_main .tag .search_bar {
+    width: 230px;
+    height: 30px;
+    background: rgb(202, 202, 202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input {
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
+
+footer .footer_main .tag .search_bar button {
+    padding: 7px 15px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    border-radius: 1 solid black;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*Media*/
+
+@media screen and (max-width: 600px) {
+    .content,
+    .btn {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 1px;
+        margin: 10px;
+    }
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+    .content {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main_text {
+        font-size: 10px;
+        margin-top: 100px;
+        display: flex;
+        float: left;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .button,
+    ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .img-box {
+        width: 300px;
+        height: 45%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-product {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .products-type h1,
+    .services h1,
+    .scroll-container h1,
+    .review h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #shop-now {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .review_card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    section .main .main_content .main_text h1 {
+        font-size: 20px;
+        line-height: 15px;
+        font-family: "Pyxidium Quick V2";
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        top: 45px;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    section .main .main_content .main_text p {
+        font-size: 15px;
+        position: relative;
+        top: 45px;
+        left: 5%;
+        text-align: left;
+        line-height: normal;
+    }
+}
+
+
+/* 
+ width: 90%;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+    font-size: 20px;
+*/

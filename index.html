@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionCycle Hub</title>
+    <link rel="icon" href="/images/title logo.jpeg" type="image/icon type">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+    <section>
+        <!--Start of Navbar-->
+        <nav>
+            <!--Logo-->
+            <div class="logo">
+                <a href="#"><img src="/images/logo.jpg"></a>
+            </div>
+            <!--ul-->
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Servises">Services</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#login_form"><i class="fa-regular fa-user"></i></a></li>
+
+            </ul>
+
+
+            <!--Search-->
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="women.html">Women</a>
+                    <a href="Evening dresses.Html">Evening Dresses</a>
+                    <a href="womenjackets.html">Women jackets</a>
+                    <a href="womenjackets.html">Women SWEATSHIRT</a>
+                    <a href="/womenblouses&Tshirts.html">Women Blouses</a>
+                    <a href="womenjeans.html">Women JEANS</a>
+                    <a href="bags.html">Bags</a>
+                    <a href="Men.html">Men</a>
+                    <a href="Kids.html">Kids</a>
+                    <a href="boys.html">boys</a>
+                    <a href="girls.html">Girls</a>
+
+                </div>
+            </div>
+            <!--For news-->
+            <div class="header-alert-news">
+                <p> <b>Free Shipping</b> This Week Order Over - 1000EGP </p>
+            </div>
+        </nav>
+
+        <!--End of search bar-->
+
+        <!--Icons in navbar-->
+
+        <!--About us(main_content)-->
+        <div class="main" id="Home">
+            <div class="main_content">
+                <div class="main_text">
+                    <!--head-->
+                    <h1>Fashion<br><span>Revive</span></h1>
+                    <div>
+                        <b>
+                        <p>A fashion exclusive marketplace for selling and buying new and secondhand clothes. You’ll never pay anywhere near full price, and this is great for when you find high-quality clothing from brand names that you know and trust.
+                        </p>
+                    </div>
+                </div>
+                <!--image-->
+                <div class="img-box">
+                    <img src="/images/back-img.png" class="back-img">
+                    <img src="/images/main.png" class="main-img">
+                </div>
+
+                <!--button-->
+                <div class="button">
+                    <a href="women.html">SHOP NOW</a>
+                    <i class="fa-solid fa-chevron-right"></i> </div>
+            </div>
+        </div>
+
+    </section>
+    <!--End of (main_content)-->
+
+
+
+
+
+    <!--Products type-->
+    <div class="products-type">
+        <h1>Products<span>Type</span></h1>
+    </div>
+    <div class="main-product">
+        <!--Man-->
+        <div class="inner-product">
+            <img src="/images/Men.jpg" alt="">
+            <a href="Men.html" id="shop-now">Men</a>
+        </div>
+        <!--Women-->
+        <div class="inner-product">
+            <img src="/images/Women.jpg" alt="">
+            <a href="women.html" id="shop-now">Women</a>
+        </div>
+        <!--Kids-->
+        <div class="inner-product">
+            <img src="/images/Kids.jpg" alt="">
+            <a href="boys.html" id="shop-now">Kids</a>
+
+        </div>
+    </div>
+    </div>
+    <!--End of products-->
+
+    <!--START OF BRAND-->
+    <div class="scroll-container">
+        <h1>Brands<span>Stores</span></h1>
+        <div class="item"><img src="/images/brands1.webp" alt="Item 1"></div>
+        <div class="item"><img src="/images/brand2.webp" alt="Item 2"></div>
+        <div class="item"><img src="/images/brand3.png" alt="Item 3"></div>
+        <div class="item"><img src="/images/brand4.png" alt="Item 4"></div>
+        <div class="item"><img src="/images/brand5.png" alt="Item 1"></div>
+        <div class="item"><img src="/images/brand6.jpg" alt="Item 2"></div>
+        <div class="item"><img src="/images/brand7.png" alt="Item 3"></div>
+        <div class="item"><img src="/images/brand8.jpg" alt="Item 4"></div>
+    </div>
+    <!--END OF BRANDS-->
+
+
+    <!--Services-->
+    <div class="services" id="Servises">
+        <!--header h1-->
+        <h1>our<span>services</span></h1>
+
+        <div class="services_cards">
+            <!--Find It -->
+            <div class="services_box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Find it</h3>
+                <p> Discover the thrill of finding one-of-a-kind pieces at out-of-this-world prices. </p>
+            </div>
+            <!--Set it free -->
+            <div class="services_box">
+                <i class="fa-solid fa-recycle"></i>
+                <h3>Set it free</h3>
+                <p> Feel good about releasing your unwanted clothes to thrifters who will love them. </p>
+            </div>
+            <!--Flaunt it-->
+            <div class="services_box">
+                <i class="fa-solid fa-star"></i>
+                <h3>Flaunt it</h3>
+                <p> Show off your secondhand clothes with pride, knowing you saved money and the planet. </p>
+            </div>
+        </div>
+    </div>
+    <!--End of services section-->
+
+
+
+    <!-- start of  Reviews -->
+    <!-- Review 1 -->
+    <div class="review" id="Review">
+        <h1>Customer's<span>review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+                        <!--images-->
+                        <div class="profile_image"><img src="/images/review 1.webp"> </div>
+                        <!--Name-->
+                        <div class="name">
+                            <strong>Ranidi Lochana</strong>
+                            <!--icons-->
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Comments-->
+                <div class="comment">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa repellat numquam atque dolores!</p>
+                </div>
+            </div>
+            <!--review 2-->
+
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+                        <!--image-->
+                        <div class="profile_image"> <img src="/images/review 2.jpg.avif"></div>
+                        <!--Name-->
+                        <div class="name"> <strong>Sayuru Tharanga</strong>
+                            <!--Icons-->
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Comments-->
+                <div class="comment">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa repellat numquam atque dolores!</p>
+                </div>
+            </div>
+            <!--review 3-->
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+                        <!--image-->
+                        <div class="profile_image"><img src="/images/review3.jpeg"> </div>
+                        <!--name-->
+                        <div class="name">
+                            <strong>Senuda Dilwan</strong>
+                            <!--icons stars-->
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--comment-->
+                <div class="comment">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa repellat numquam atque dolores!</p>
+                </div>
+            </div>
+        </div>
+        <!--review 4-->
+        <div class="review_box">
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image"> <img src="/images/review 4.webp"></div>
+                        <!--Name-->
+                        <div class="name">
+                            <strong>Kaveesha Vidurangi</strong>
+                            <!--icons stars-->
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--comments-->
+                <div class="comment">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+            </div>
+            <!--review5-->
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+                        <!--image-->
+                        <div class="profile_image">
+                            <img src="/images/review 5.jpg.webp">
+                        </div>
+                        <!--Name-->
+                        <div class="name">
+                            <strong>John Deo</strong>
+                            <!--icons-->
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--comments-->
+                <div class="comment">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+            </div>
+            <!--review 6-->
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+                        <!--image-->
+
+                        <div class="profile_image">
+                            <img src="/images/review 6.jpg">
+                        </div>
+                        <!--name-->
+
+                        <div class="name">
+                            <strong>Charith Aruna</strong>
+                            <!--icons-->
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--comments-->
+                <div class="comment">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--end of review-->
+
+
+    <!-- footer section starts -->
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main" id="contact-us">
+            <!--Contact-->
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>Egypt,Cairo,The 5th Settlement</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>01222425454</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>FashionRevive@gmail.com</a>
+            </div>
+            <!--Get Help-->
+            <div class="tag">
+                <h1>Get Help</h1>
+                <a href="#" class="center">FAQ</a>
+                <a href="#" class="center">Shipping</a>
+                <a href="#" class="center">Returns</a>
+                <a href="#" class="center">Payment Options</a>
+            </div>
+            <!--Country-->
+            <div class="tag">
+                <h1>Our Stores</h1>
+                <a href="#" class="center">Egypt</a>
+                <a href="#" class="center">KSA</a>
+                <a href="#" class="center">UAE</a>
+
+            </div>
+            <!--Social Links-->
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AffLdDnkTODNFISd6hbwLK6jUDgRSqZZYohKsI6XMqKp5-3xWFTR2359VRo08o31BpPvcOLpMbod_a5Hih42RdB9f9SYHi7-r2SQU93wyMllEg&smuh=59063&lh=Ac-g56fbj-vTJ0n9xXE"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!--Subscribe-->
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="You email id here">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <p class="copyright">&copy; 2024 Fashion Revive. All Rights Reserved.</p>
+        </div>
+
+
+    </footer>
+    <script defer src="javascript.js"></script>
+
+</body>
+
+
+</html>
